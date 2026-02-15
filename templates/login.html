@@ -2,7 +2,19 @@
 <html>
 <head>
 <title>Employee Management System</title>
+<<<<<<< HEAD:Templates/login.html
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+=======
+ <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<style>
+body{background: linear-gradient(to right, #4facfe, #00f2fe);font-family: Arial; display: flex; justify-content: center;align-items: center;height: 100vh;}
+.login-box {background: white;padding: 30px;border-radius: 10px;width: 300px; box-shadow: 0px 0px 10px gray;}
+h2 {text-align: center;}
+input {width: 100%;padding: 8px;margin-top: 5px;margin-bottom: 15px;}
+ button { width: 100%; padding: 10px;background: #4facfeborder: none;color: white;font-size: 16px;border-radius: 5px; }
+        button:hover {background: #00c6ff;}
+ </style>
+>>>>>>> e40cf701d97f6a0fc4e3ab9652545b5c685e16b6:templates/login.html
 </head>
 <body>
 <div class="login-box">
@@ -22,15 +34,13 @@
     <button type="submit">Login</button>
 
     <p style="text-align:center; margin-top:10px;">
-        <a href="/forgot">Forgot Password?</a>
+        <a href="{{ url_for('forgot') }}">Forgot Password?</a>
     </p>
 
     <p style="text-align:center;">
         New user? <a href="/signup">Sign up</a>
     </p>
 </form>
-
-
 
           <script>function showPassword() {var x = document.getElementById("password");
 if (x.type === "password") {x.type = "text";} else { x.type = "password";} }
