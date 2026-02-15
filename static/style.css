@@ -1,51 +1,57 @@
 body{
-    background: linear-gradient(to right, #ff9966, #ff5e62);
-    font-family: Arial;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    margin:0;
+    padding:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg,#36d1dc,#5b86e5);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .login-box{
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    width: 320px;
-    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
-    text-align: center;
+    background:white;
+    padding:30px;
+    width:320px;
+    border-radius:12px;
+    box-shadow:0px 8px 25px rgba(0,0,0,0.25);
+    text-align:center;
 }
 
 h2{
-    margin-bottom: 20px;
+    margin-bottom:20px;
 }
 
 input{
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+    width:100%;
+    padding:10px;
+    margin-top:8px;
+    margin-bottom:15px;
+    border-radius:6px;
+    border:1px solid #ccc;
 }
 
 button{
-    width: 100%;
-    padding: 10px;
-    background: #ff5e62;
-    border: none;
-    color: white;
-    font-size: 16px;
-    border-radius: 6px;
-    cursor: pointer;
+    width:100%;
+    padding:10px;
+    border:none;
+    background:#ff4b5c;
+    color:white;
+    font-size:16px;
+    border-radius:6px;
+    cursor:pointer;
 }
 
 button:hover{
-    background: #e14b4f;
+    background:#e63e4d;
 }
 
 a{
-    display: block;
-    margin-top: 10px;
-    color: #ff5e62;
-    text-decoration: none;
+    text-decoration:none;
+    color:#5b86e5;
+    font-size:14px;
+}
+
+a:hover{
+    text-decoration:underline;
 }
