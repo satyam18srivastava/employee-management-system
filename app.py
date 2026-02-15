@@ -38,11 +38,8 @@ def forgot():
 
     return render_template('forgot.html')
 
-<<<<<<< HEAD
-if __name__ == "__main__":
-    app.run(debug=True)
-=======
+import os
 
-if __name__ == '__main__':
-    app.run(debug=True)
->>>>>>> e40cf701d97f6a0fc4e3ab9652545b5c685e16b6
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
